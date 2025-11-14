@@ -2,7 +2,7 @@ import pandas as pd
 from src.extract import fetch_all_news_data
 from src.transform_load import clean_and_analyze_data, load_to_database
 
-API_KEY = "YOUR_API_KEY_HERE"  
+API_KEY = "7dc45bf9d5164348a8456170f293aef2"  
 QUERY = "consumer spending OR supply chain OR FMCG market"
 PAGE_SIZE = 20
 LIMIT_DAYS = 3
