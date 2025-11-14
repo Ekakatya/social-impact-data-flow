@@ -6,7 +6,7 @@ API_KEY = "YOUR_API_KEY_HERE"
 QUERY = "consumer spending OR supply chain OR FMCG market"
 PAGE_SIZE = 20
 LIMIT_DAYS = 3
-MAX_PAGES = 5
+
 
 DB_NAME = 'news_dwh.db'
 TABLE_NAME = 'sentiment_articles'
