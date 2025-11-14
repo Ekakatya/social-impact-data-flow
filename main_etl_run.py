@@ -7,7 +7,6 @@ QUERY = "consumer spending OR supply chain OR FMCG market"
 PAGE_SIZE = 20
 LIMIT_DAYS = 3
 
-
 DB_NAME = 'news_dwh.db'
 TABLE_NAME = 'sentiment_articles'
 
@@ -16,7 +15,7 @@ if __name__ == "__main__":
     print("--- Starting Full ETL Pipeline in Container ---")
     
     # E: Extraction
-    raw_articles_list = fetch_all_news_data(API_KEY, QUERY, LIMIT_DAYS, PAGE_SIZE, MAX_PAGES)
+    raw_articles_list = fetch_all_news_data(API_KEY, QUERY, LIMIT_DAYS, PAGE_SIZE)
     raw_df = pd.DataFrame(raw_articles_list)
     
     if raw_df.empty:
