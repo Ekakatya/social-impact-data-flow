@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 NEWS_API_URL = "https://newsapi.org/v2/everything"
 
-def fetch_news_data(api_key: str, query: str, days_limit: int, page_size: int) -> list:
+def fetch_all_news_data(api_key: str, query: str, days_limit: int, page_size: int) -> list:
 
     print(f"-> Starting extraction for query: '{query}'...")
     
